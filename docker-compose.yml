@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  php-fpm:
+    container_name: boilerplate_app
+    build:
+      context: .
+      dockerfile: ./php-fpm/Dockerfile
+    volumes:
+      - ./src:/var/www/html/src
